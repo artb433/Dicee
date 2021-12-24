@@ -16,17 +16,18 @@ class _ComputerState extends State<Computer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[900],
+      backgroundColor: Colors.blueGrey[800],
       appBar: AppBar(
+        backgroundColor: Colors.amber,
         actions: [
           InkWell(
               onTap: () {
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (buildContext) => DicePage()));
               },
-              child: Icon(Icons.person))
+              child: const Icon(Icons.person))
         ],
-        title: Text('Playing with TwoPlayer,Art.b'),
+        title: const Text('Playing with TwoPlayer,Art.b'),
       ),
       body: Center(
         child: Column(

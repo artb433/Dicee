@@ -14,6 +14,7 @@ class _DicePageState extends State<DicePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.green,
         title: const Text('Art B Technologies'),
         actions: [
           IconButton(
